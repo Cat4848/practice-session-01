@@ -4,15 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./components/Root";
+import Root from "./components/Root";
 import ErrorPage from "./components/ErrorPage";
 import About from "./components/About";
 import Careers from "./components/Careers";
+import DashboardRoot from "./components/DashboardRoot";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
         element: <Careers />
       }
     ]
+  },
+  {
+    path: "dashboard",
+    element: <DashboardRoot />,
+    errorElement: <ErrorPage />
   }
 ]);
 
