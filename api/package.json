@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "nodemon dist/index.js",
-    "build": "tsc --watch"
+    "build": "tsc --watch",
+    "seed": "node -r dotenv/config ./lib/seed.js"
   },
   "keywords": [],
   "author": "Catalin Pirtiu – catalinrol@gmail.com",
