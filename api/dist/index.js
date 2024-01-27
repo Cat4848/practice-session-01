@@ -1,7 +1,4 @@
-"use strict";
-const number = 5;
-function add(first, second) {
-    return first + second;
-}
-const text = "abs";
+import e from "express";
+const app = e();
+app.listen(4000, () => console.log("Server running"));
 //# sourceMappingURL=index.js.map
