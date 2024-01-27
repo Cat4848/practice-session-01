@@ -9,6 +9,8 @@ import ErrorPage from "./components/ErrorPage";
 import About from "./components/About";
 import Careers from "./components/Careers";
 import DashboardRoot from "./components/DashboardRoot";
+import Accounts from "./components/Accounts";
+import Reports from "./components/Reports";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +31,17 @@ const router = createBrowserRouter([
   {
     path: "dashboard",
     element: <DashboardRoot />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "accounts",
+        element: <Accounts />
+      },
+      {
+        path: "reports",
+        element: <Reports />
+      }
+    ]
   }
 ]);
 

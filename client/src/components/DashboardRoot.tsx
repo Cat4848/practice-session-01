@@ -7,10 +7,10 @@ export default function DashboardRoot() {
       <nav>
         <ul>
           <li>
-            <Link to="dashboard/accounts">Accounts</Link>
+            <Link to="accounts">Accounts</Link>
           </li>
           <li>
-            <Link to="dashboard/reports">Reports</Link>
+            <Link to="reports">Reports</Link>
           </li>
         </ul>
       </nav>
