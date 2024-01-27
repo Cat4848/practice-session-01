@@ -16,9 +16,7 @@ async function createUsers(sql) {
       name VARCHAR(255) NOT NULL,
       color VARCHAR(255)
       );`);
-    console.log("customersTable", customersTable);
   } catch (error) {
-    console.log("customers table creation error", error);
   }
 }
 
