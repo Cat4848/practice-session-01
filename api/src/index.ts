@@ -22,4 +22,8 @@ app.put("/users/:id", (req, res) => {
   res.send("User edited in the database.");
 });
 
+app.delete("/users/:id", (req, res) => {
+  res.send("Specific user deleted.");
+});
+
 app.listen(4000);
