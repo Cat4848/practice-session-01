@@ -1,7 +1,29 @@
-const number = 5;
+import e from "express";
 
-function add(first: number, second: number) {
-  return first + second;
-}
+const app = e();
 
-const text = "abs";
+app.get("/users", (req, res) => {
+  res.send("Here are all orders.");
+});
+
+app.get("/users/new", (req, res) => {
+  res.send("Here is the new user form.");
+});
+
+app.post("/users/new", (req, res) => {
+  res.send("New user added.");
+});
+
+app.get("/users/edit/:id", (req, res) => {
+  res.send("Here is the edit particular user form.");
+});
+
+app.put("/users/:id", (req, res) => {
+  res.send("User edited in the database.");
+});
+
+app.delete("/users/:id", (req, res) => {
+  res.send("Specific user deleted.");
+});
+
+app.listen(4000);
