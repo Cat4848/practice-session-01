@@ -2,9 +2,11 @@
   "name": "practice-session-01-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "tsc --watch"
   },
   "keywords": [],
   "author": "Catalin Pirtiu – catalinrol@gmail.com",
